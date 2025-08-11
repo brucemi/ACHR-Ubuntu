@@ -26,7 +26,7 @@ sudo bash ./install.sh
 
 ---
 
-执行时脚本会：
+## 执行时脚本会：
 
 自动识别默认网卡与当前 IPv4/CIDR、默认网关；
 
@@ -38,7 +38,7 @@ sudo bash ./install.sh
 
 在执行前，脚本会打印磁盘/网络计划并要求你输入 YES 二次确认。
 ---
-常用用法
+## 常用用法
 
 1) 指定安装目标磁盘
 
@@ -61,7 +61,7 @@ sudo NETWORK_MODE=dhcp bash ./install.sh
 
 sudo CHR_VERSION=7.19.3 bash ./install.sh
 ---
-如何确认刷机成功
+## 如何确认刷机成功
 
 机器会自动重启；
 
@@ -80,7 +80,7 @@ DHCP 模式：路由器应从上游获取地址，可在上游 DHCP 租约、ARP
 /ip address add address=<IP/CIDR> interface=ether1
 /ip route add gateway=<GW>
 ---
-常见问题（FAQ）
+## 常见问题（FAQ）
 
 Q1：为什么不建议在 v6.49.13 上用 Winbox 直接升级到 v7？
 
