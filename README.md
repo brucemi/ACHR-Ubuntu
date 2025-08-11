@@ -1,6 +1,3 @@
-# README.md（已改为使用你的仓库 brucemi/ACHR-Ubuntu）
-
-````markdown
 # ACHR-Ubuntu — 一键整机刷 MikroTik CHR v7.19.4（适配 Ubuntu）
 
 把当前 Ubuntu 主机整机刷成 **MikroTik Cloud Hosted Router (CHR) v7.19.4**。  
