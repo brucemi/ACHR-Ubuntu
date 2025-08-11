@@ -24,7 +24,7 @@ cd ACHR-Ubuntu
 chmod +x install.sh
 sudo bash ./install.sh
 
-
+---
 
 执行时脚本会：
 
@@ -37,7 +37,7 @@ sudo bash ./install.sh
 对目标盘执行整盘 dd → 同步 → 重启进入 CHR。
 
 在执行前，脚本会打印磁盘/网络计划并要求你输入 YES 二次确认。
-
+---
 常用用法
 
 1) 指定安装目标磁盘
@@ -48,18 +48,19 @@ sudo TARGET_DISK=/dev/nvme0n1 bash ./install.sh
 
 # 或 SATA 机器
 sudo TARGET_DISK=/dev/sda bash ./install.sh
-
+---
 2) 改为 DHCP（更保险，开机即拿地址）
 
 sudo NETWORK_MODE=dhcp bash ./install.sh
 
 若你的机房/云平台支持二层直连，DHCP 模式失败时仍可用 Winbox 的 MAC 方式连接（同网段宿主需在同二层）。
+---
 3) 临时改版本（仍为 v7 系列）
 
 脚本默认 CHR_VERSION=7.19.4，如需覆盖：
 
 sudo CHR_VERSION=7.19.3 bash ./install.sh
-
+---
 如何确认刷机成功
 
 机器会自动重启；
@@ -78,7 +79,7 @@ DHCP 模式：路由器应从上游获取地址，可在上游 DHCP 租约、ARP
 # 或者：
 /ip address add address=<IP/CIDR> interface=ether1
 /ip route add gateway=<GW>
-
+---
 常见问题（FAQ）
 
 Q1：为什么不建议在 v6.49.13 上用 Winbox 直接升级到 v7？
